@@ -6,14 +6,84 @@
 
 # This is a very, very, very simple grammar to get you started.
 
+
+# Arthur rides the horse near the castle .
+20	NP	NP PP
+
+#Arthur rides the plodding horse near the castle .
+22	NP	Det Adj Nbar
+
+# the Holy Grail is a chalice .
+#20	NP	Nbar
+20	Nbar	NNP
+
+# every coconut was carried to the hottest mountains .
+1	VP	VBD VP
+1	VP	VBD PP
+22	NP	Det AdjS Nbar
+1	PP	TO NP
+20	Nbar	Nouns
+
+# sixty strangers are at the Round Table .
+22	NP	Number Nouns
+1	VP	VBP PP
+
+# Sir Lancelot might have spoken .
+1	VP	MD VP
+1	VP	VB VP
+1	VP	VBN
+
+# Guinevere had been riding with Patsy for five weary nights .
+1	VP	VBG PP
+1	VP	VBN VP
+1	NP	Number NP
+1	NP	Adj Nbar
+1	Nbar	Nouns
+
+# Sir Bedevere might have been suggesting this quest .
+1	VP	VBG NP
+
+#the Britons migrate south frequently .
+1	Nbar	NNPS
+1	VP	VB ADVP
+1	ADVP	ADV ADV
+
+#Arthur and Guinevere ride frequently near the castle .
+1	NP	Proper CC Proper
+1	VP	VBP ADVP PP
+1	ADVP	ADV
+
+#he suggests to grow fruit at home .
+1	NP	Pro
+1	VP	VBS S1
+1	S1	VP
+1	VP	VB NP PP
+1	NP	Noun
+1	VP	TO VP
+
+#riding to Camelot is not hard .
+1	S1	S1 VP .
+1	VP	VerbT ADV ADJP
+1	ADJP	Adj
+
+
+#do coconuts speak ?
+1	Aux	NP VP .
+1	NP	Nbar
+1	VP	VB
+
 # Sentences
 1	S1	NP VP .
+
 
 #  Verb phrases
 1	VP	VerbT NP
 
+
+
 # Noun phrases
 20	NP	Det Nbar
+
 1	NP	Proper
 
 # Noun phrase, inner level

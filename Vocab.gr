@@ -82,8 +82,8 @@
 
 # End-of-sentence.
 1	Misc	!
-1	Misc	.
-1	Misc	?
+1	.	.
+1	.	?
 
 # Pauses.
 1	Misc	,
@@ -93,7 +93,7 @@
 1	Misc	:
 
 # Coordinating conjunctions.
-1	Misc	and
+1	CC	and
 1	Misc	but
 1	Misc	or
 1	Misc	either
@@ -103,10 +103,10 @@
 
 # Numbers.
 1	Misc	eight
-1	Misc	five
+1	Number	five
 1	Misc	one
 1	Misc	5.5
-1	Misc	sixty
+1	Number	sixty
 1	Misc	5,000
 
 # Expletive.
@@ -123,7 +123,7 @@
 1	Misc	can
 1	Misc	could
 1	Misc	may
-1	Misc	might
+1	MD	might
 1	Misc	must
 1	Misc	ought
 1	Misc	shall
@@ -133,69 +133,71 @@
 
 
 # Adjectives.
-1	Misc	bloody
-1	Misc	weary
-1	Misc	unable
-1	Misc	trusty
-1	Misc	further
-1	Misc	sacred
-1	Misc	tropical
-1	Misc	indigenous
-1	Misc	temperate
-1	Misc	hot
-1	Misc	lucky
-1	Misc	simple
-1	Misc	tiny
-1	Misc	hard
-1	Misc	sensational
-1	Misc	comparable
-1	Misc	angolian
+1	Adj	bloody
+1	Adj	weary
+1	Adj	unable
+1	Adj	trusty
+1	Adj	further
+1	Adj	sacred
+1	Adj	tropical
+1	Adj	indigenous
+1	Adj	temperate
+1	Adj	hot
+1	Adj	lucky
+1	Adj	simple
+1	Adj	tiny
+1	Adj	hard
+1	Adj	sensational
+1	Adj	comparable
+1	Adj	angolian
 1	Adj	yellow
 1	Adj	plodding
 
 # Comparative adjectives.
-1	Misc	bloodier
-1	Misc	wearier
-1	Misc	trustier
-1	Misc	hotter
-1	Misc	simpler
-1	Misc	tinier
-1	Misc	harder
+1	Adj	bloodier
+1	Adj	wearier
+1	Adj	trustier
+1	Adj	hotter
+1	Adj	simpler
+1	Adj	tinier
+1	Adj	harder
 
 # Superlative adjectives.
-1	Misc	bloodiest
-1	Misc	weariest
-1	Misc	trustiest
-1	Misc	hottest
-1	Misc	simplest
-1	Misc	tiniest
-1	Misc	hardest
+1	Adj	bloodiest
+1	Adj	weariest
+1	Adj	trustiest
+1	AdjS	hottest
+1	Adj	simplest
+1	Adj	tiniest
+1	Adj	hardest
 
 # Plural nouns.
-1	Misc	coconuts
-1	Misc	halves
-1	Misc	snows
-1	Misc	mountains
-1	Misc	areas
-1	Misc	strangers
-1	Misc	inches
-1	Misc	snakes
-1	Misc	ants
-1	Misc	nights
+1	Nouns	coconuts
+1	Nouns	halves
+1	Nouns	snows
+1	Nouns	mountains
+1	Nouns	areas
+1	Nouns	strangers
+1	Nouns	inches
+1	Nouns	snakes
+1	Nouns	ants
+1	Nouns	nights
 
 # More proper nouns, not people.
 
-1	Misc	Camelot
-1	Misc	England
-1	Misc	Holy Grail
-1	Misc	Round Table
+1	NNP	Camelot
+1	NNP	England
+1	NNP	Holy Grail
+1	NNP	Round Table
 
 # Plural proper nouns.
-1	Misc	Britons
+1	NNPS	Britons
 1	Misc	Saxons
 
+#Arthur and Guinevere ride frequently near the castle .
+
 # Personal pronouns.
-1	Misc	he
+1	Pro	he
 1	Misc	her
 1	Misc	him
 1	Misc	it
@@ -215,28 +217,28 @@
 1	Misc	again
 1	Misc	already
 1	Misc	currently
-1	Misc	frequently
+1	ADV	frequently
 1	Misc	precisely
-1	Misc	south
+1	ADV	south
 1	Misc	successfully
 1	Misc	unfortunately
 
 # 'do'/'does'
-1	Misc	do
-1	Misc	does
+1	Aux	do
+1	Aux	does
 
 # 'to'
-1	Misc	to
+1	TO	to
 
 # 'not'
-1	Misc	not
+1	ADV	not
 
 # Verbs (base form).
-1	Misc	have
-1	Misc	speak
+1	VB	have
+1	VB	speak
 1	Misc	cover
 1	Misc	be
-1	Misc	ride
+1	VB	ride
 1	Misc	drink
 1	Misc	grow
 1	Misc	carry
@@ -245,15 +247,15 @@
 1	Misc	know
 
 # Verbs (past tense).
-1	Misc	had
+2	VBD	had
 1	Misc	spoke
 1	Misc	covered
-1	Misc	was
+1	VBD	was
 1	Misc	were
 1	Misc	rode
 1	Misc	drank
 1	Misc	grew
-1	Misc	carried
+1	VBD	carried
 1	Misc	suggested
 1	Misc	migrated
 1	Misc	knew
@@ -263,19 +265,19 @@
 1	Misc	speaking
 1	Misc	covering
 1	Misc	being
-1	Misc	riding
+1	VBG	riding
 1	Misc	drinking
 1	Misc	growing
 1	Misc	carrying
-1	Misc	suggesting
+1	VBG	suggesting
 1	Misc	migrating
 1	Misc	knowing
 
 # Verbs (past participle).
-1	Misc	had
-1	Misc	spoken
+1	VBN	had
+1	VBN	spoken
 1	Misc	covered
-1	Misc	been
+1	VBN	been
 1	Misc	ridden
 1	Misc	drunk
 1	Misc	grown
@@ -286,24 +288,24 @@
 
 # More third person singular verbs.
 1	Misc	speaks
-1	Misc	grows
+1	VBS	grows
 1	Misc	goes
 1	Misc	migrates
-1	Misc	suggests
+1	VBS	suggests
 1	Misc	knows
 
 # Verbs (present, plural, third person).
-1	Misc	have
-1	Misc	speak
-1	Misc	cover
-1	Misc	are
-1	Misc	ride
-1	Misc	drink
-1	Misc	grow
-1	Misc	carry
-1	Misc	suggest
-1	Misc	migrate
-1	Misc	know
+1	VB	have
+1	VB	speak
+1	VB	cover
+1	VBP	are
+1	VBP	ride
+1	VB	drink
+1	VB	grow
+1	VB	carry
+1	VB	suggest
+1	VB	migrate
+1	VB	know
 
 # Wh-determiners.
 1	Misc	that
@@ -321,7 +323,7 @@
 1	Misc	how
 1	Misc	when
 1	Misc	where
-1	Misc	why
+1	WRB	why
 
 
 # Possessive marker.
